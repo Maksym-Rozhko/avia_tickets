@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avia tickets</title>
+    <link rel="stylesheet" href="assets/css/normolize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="app">
+        <div class="js-container container is-active">
+            <div class="icon-box">
+                <img class="icon-img" src="./assets/images/plane-ticket.svg" alt="icon: plane-ticket">
+            </div>
+            <h2 class="heading">
+                Онлайн регистрация на рейс
+            </h2>
+            <form id="form" action="#" class="content">
+                <label class="form-label">
+                    <span class="form-descript">
+                        Номер билета
+                    </span>
+                    <input id="inputTicket" class="form-input" type="text" placeholder="Введите номер">
+                </label>
+                <button type="submit" class="form-btn">
+                    Отправить
+                </button>
+            </form>
+        </div>
+        <div class="js-container app-thanks container">
+            <div class="icon-box">
+                <img class="icon-img" src="./assets/images/stars.svg" alt="icon: stars">
+            </div>
+            <h2 class="heading">
+                Вы успешно 
+                <span>
+                    зарегистрированы на рейс!
+                </span>
+            </h2>
+            <p class="heading-thanks">
+                Благодарим за использование Skillbox Avia!
+            </p>
+            <button id="resetApp" type="button" class="thanks-btn">
+                Ещё регистрация
+            </button>
+        </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
