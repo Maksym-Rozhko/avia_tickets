@@ -4,8 +4,9 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "parcel serve src/index.html --public-url='.'",
-    "build": "parcel build src/index.html --out-dir=www --public-url='.'",
+    "start": "parcel serve src/index.html",
+    "build": "parcel build src/index.html --out-dir=dist --public-url='.'",
+    "ionic:build": "parcel build src/index.html --out-dir=dist --public-url='.'",
     "electron:serve": "electron app.js",
     "electron:build": "electron-packager . universal --overwrite --ignore\"(node_modules|src|.cache)\""
   },
@@ -14,6 +15,7 @@
   "dependencies": {
     "@capacitor/android": "^2.4.6",
     "@capacitor/core": "2.4.6",
+    "cocoapods": "0.0.0",
     "electron": "^11.2.1",
     "electron-packager": "^15.2.0",
     "parcel": "^1.12.4"
