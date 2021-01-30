@@ -1,6 +1,7 @@
 const form = document.getElementById('form');
 const resetBtn = document.getElementById('resetApp');
 const formBtn = document.querySelector('form-btn');
+const isElectron = navigator.userAgent.indexOf('Electron') !== -1;
 
 function changeContainer() {
     const containerActive = document.querySelector('.js-container.is-active');
@@ -22,3 +23,7 @@ form.addEventListener('submit', e => {
 });
 
 resetBtn.addEventListener('click', changeContainer);
+
+if(isElectron) {
+    document.body.classList.add('electron');
+}

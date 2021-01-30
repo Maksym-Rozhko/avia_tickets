@@ -8,6 +8,10 @@ body {
     font-family: sans-serif;
 }
 
+body.electron {
+    background-color: #321a74;
+}
+
 .app {
     height: 100vh;
     display: flex;
